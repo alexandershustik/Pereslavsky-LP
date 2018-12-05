@@ -1,0 +1,73 @@
+@import url("../../node_modules/slick-carousel/slick/slick");
+.lead {
+  background: #333;
+  -webkit-background-size: cover;
+          background-size: cover;
+  min-height: 450px;
+  max-height: 500px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .lead .header {
+    text-align: center;
+    background: rgba(255, 0, 0, 0.5);
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    position: relative; }
+    .lead .header:after {
+      content: '';
+      width: 100%;
+      height: 150px;
+      background: orange;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    .lead .header .logo {
+      width: 200px;
+      height: 50px;
+      display: inline-block;
+      background: aliceblue; }
+
+.adv {
+  position: relative; }
+  .adv:before {
+    content: '';
+    width: 100%;
+    height: 50px;
+    background: rgba(95, 158, 160, 0.5);
+    position: absolute;
+    top: -50px;
+    left: 0; }
+  .adv .row {
+    text-align: center; }
+  .adv img {
+    display: inline-block;
+    width: 100px;
+    height: 150px;
+    background: darkblue; }
+  .adv .pics img {
+    width: 100%; }
+
+.center-text {
+  max-width: 500px;
+  text-align: center;
+  display: inline-block; }
+
+.slider {
+  text-align: center; }
+
+.sectionHeader {
+  background: darkcyan;
+  display: inline-block; }
+
+.slick-item {
+  background: darkmagenta;
+  height: 400px; }
+  .slick-item.blue {
+    background: blue; }
