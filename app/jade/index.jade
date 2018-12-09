@@ -2,53 +2,159 @@
 html(lang="en")
 head
 	meta(charset="UTF-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
 	title Document
-	link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Raleway:400,800')
+	link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600&amp;subset=cyrillic')
 	link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
-	link(rel='stylesheet', href='/css/bootstrap.css')
-	link(rel='stylesheet', href='/css/libs.min.css')
-	link(rel='stylesheet', href='/css/main.css')
+	link(rel='stylesheet', href='css/bootstrap.css')
+	link(rel='stylesheet', href='css/libs.min.css')
+	link(rel='stylesheet', href='css/main.css')
 body
 	section.lead
 		.container.header
 			a(href="#").logo
-				img(src="", alt="").logo
-			h1 Крупнейший производитель сыра
+				img(src="img/logo.png", alt="")
+			h1 Крупнейший производитель сыров в России
 			h2 основан в 2010 году
 	section.adv
 		.container
-			.row
+			.row.adv-icons
 				.col-sm
-					img(src="", alt="")
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, soluta.
+					.img-wrap
+						img(src="img/adv-icon1.png", alt="")
+					p Более 10 видов сыров 
+						br
+						| по ГОСТу
 				.col-sm
-					img(src="", alt="")
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores!
+					.img-wrap
+						img(src="img/adv-icon2.png", alt="")
+					p Cобственная лаборатория
+						br
+						|контроля качества
 				.col-sm
-					img(src="", alt="")
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sunt, fuga.
+					.img-wrap
+						img(src="img/adv-icon3.png", alt="")
+					p 700 тонн продукции 
+						br
+						|в месяц
 				.col-sm
-					img(src="", alt="")
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					.img-wrap
+						img(src="img/adv-icon4.png", alt="")
+					p Оборудование завода 
+						br
+						|поставлено из Италии
 			.row.pics
 				.col-sm
-					img(src="", alt="")
+					img(src="img/adv-photo1.png", alt="")
 				.col-sm
-					img(src="", alt="")
+					img(src="img/adv-photo2.png", alt="")
 				.col-sm
-					img(src="", alt="")
+					img(src="img/adv-photo3.png", alt="")
 				.col-sm
-					img(src="", alt="")
+					img(src="img/adv-photo4.png", alt="")
 			.row.desc
 				.col
-					p.center-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni cumque ad iusto harum eos ducimus iste excepturi eligendi rerum temporibus quaerat explicabo, neque similique asperiores illo nam, reiciendis nobis et deserunt ea dolorum. Sequi consequatur error, debitis nesciunt, non aliquam.
-	section.slider
+					p.text-center.mited-text Развиваемся и ищем новые направления бизнеса, отвечаем за 
+						br
+						| качество своей продукции, ценим традиции и открыты  
+						br
+						| для нового, предлогая лучшие условия для сотрудничества.
+	//section.slider
 		h3.sectionHeader Наши сыры
 		.container
 			.slick-slider
-				.slick-item.purple
-					img(src="", alt="")
-				.slick-item.blue
-					img(src="", alt="")
-	script(src='/js/libs.min.js')
-	script(src='/js/common.js')
+				.slick-item
+					img(src="img/slider-photo.png", alt="")
+					p.slider-text Сыр «Маасдам»
+						span 50%, 4,5 кг
+				.slick-item
+					img(src="img/slider-photo.png", alt="")
+					p.slider-text Сыр «Маасдам»
+						span 50%, 4,5 кг
+				.slick-item
+					img(src="img/slider-photo.png", alt="")
+					p.slider-text Сыр «Маасдам»
+						span 50%, 4,5 кг
+				.slick-item
+					img(src="img/slider-photo.png", alt="")
+					p.slider-text Сыр «Маасдам»
+						span 50%, 4,5 кг
+	section.promo
+		h3.sectionHeader Продукция для СТМ
+		.container
+			.row.desc
+				.col-12
+					p.text-center.mited-text «Переславский сыродельный завод» предлагает весовую продукцию собственного изготовления и перефасовку молочной продукции под торговой маркой заказчика (СТМ).
+					p.text-center.mited-text.mt-5 Весовая продукция упаковывается
+						br
+						|в короба или пластиковые вёдра
+					p.text-center.mited-text.mt-3
+						img(src="img/stm-icon-bucket.png", alt="").icon
+						img(src="img/stm-icon-box.png", alt="").icon
+	section.products
+		.container
+			.row
+				.col-4.text-center
+					img(src="img/photo-oil.png", alt="")
+					p.products-txt Масло слиивочное
+						span фольга, пергамент, флоупак
+							br
+							|180 г, 200 г
+				.col-4.text-center
+					img(src="img/photo-curd.png", alt="")
+					p.products-txt Творог
+						span фольга, пергамент, флоупак
+							br
+							|180 г, 200 г
+				.col-4.text-center
+					img(src="img/photo-spread.png", alt="")
+					p.products-txt Спред
+						span фольга, пергамент, флоупак
+							br
+							|180 г, 200 г
+	section.news.text-center
+		h3.sectionHeaderNews СМИ о нас
+		.container
+			.row
+				.col-4.text-center
+					img(src="img/news-play-icon.png", alt="")
+					p.news-txt Под Калининградом начинают 
+						br
+						|выпуск сыров по-настоящему
+						br
+						|российского производства
+				.col-4.text-center
+					img(src="img/news-doc-icon.png", alt="")
+					p.news-txt В бизнесе навыки надо развивать,
+						br
+						|как в футболе, 
+						br
+						|с детства
+				.col-4.text-center
+					img(src="img/news-doc-icon.png", alt="")
+					p.news-txt От моцареллы до гауды:
+						br
+						|Переславский завод начал
+						br
+						|выпуск сыра из местного сырья
+	footer
+		.container
+			.row
+				.col-6
+					img(src="img/footer-map.png", alt="").footerMap
+				.col-6.ml-auto
+					h3.footer-header ООО «Переславский сыродельный завод»
+					p.footer-txt 238952, Россия, Калининградская обл.,
+						br
+						|Зеленоградский р-н, п. Переславское, стр. 17
+					p.footer-txt
+						strong тел. 
+						a(href="tel:+74012343-434") +7 (4012) 343-434
+					p.footer-txt
+						strong e-mail 
+						a(href="mailto:info@pereslavsky.ru") info@pereslavsky.ru
+					p.footer-links
+						a(href="#").footer-link.fb-footer-link
+						a(href="#").footer-link.inst-footer-link
+	script(src='js/libs.min.js')
+	script(src='js/common.js')
