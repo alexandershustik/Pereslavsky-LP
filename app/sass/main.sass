@@ -27,12 +27,19 @@ body
 		font-weight: 600
 		font-size: 28px
 		color: #fff
+		@media (max-width: 576px)
+			font-size: 18px
 	h2
 		font-weight: 400
 		font-size: 24px
 		color: #fff
+		@media (max-width: 576px)
+			font-size: 14px
 .adv
 	position: relative
+	padding-top: 40px
+	@media (max-width: 576px)
+		padding-top: 20px
 	&:before
 		content: ''
 		width: 100%
@@ -70,6 +77,8 @@ body
 	font-size: 25px
 	color: #808080
 	font-weight: regular
+	@media (max-width: 576px)
+		font-size: 18px
 .sectionHeader
 	background: #0076be
 	display: inline-block
@@ -79,16 +88,15 @@ body
 	padding: 10px 20px
 	font-weight: 600
 	margin-bottom: 30px
+	@media (max-width: 576px)
+		font-size: 26px
 .promo
 	text-align: center
-.icon
-	margin: 10px
-.slider
-	margin-top: 90px
-	text-align: center
-	background: gray
-.promo
 	margin-top: 100px
+	@media (max-width: 576px)
+		margin-top: 30px
+.icon
+	margin: 10px	
 .products-txt
 	color: #808080
 	font-size: 28px
@@ -99,29 +107,42 @@ body
 		font-size: 18px
 		margin-top: 10px
 		display: block
+.products
+	margin-bottom: 50px	
+	img
+		width: 100%
+		max-width: 256px
 .news
 	background: url(../img/news-bg.png) no-repeat center center
 	background-size: cover
 .sectionHeaderNews
 	font-size: 48px
 	color: #fff
-	padding: 10px 20px
 	font-weight: 600
 	padding: 60px 0
+	@media (max-width: 576px)
+		font-size: 26px
+		padding: 30px 0
 .news-txt
 	font-size: 18px
-	font-weight: 600
+	font-weight: 400
 	color: #fff
 	margin-top: 40px
 	margin-bottom: 55px
-	line-height: 1.5
+	line-height: 1.2
+	@media (max-width: 576px)
+		font-size: 16px
 footer
 	padding: 80px 0
+	@media (max-width: 576px)
+		padding: 40px 0
 .footer-header
 	font-size: 25px
 	font-weight: 600
 	color: #808080
 	margin-bottom: 30px
+	@media (max-width: 576px)
+		font-size: 18px
 .footer-txt
 	font-size: 20px
 	font-weight: 400
@@ -132,8 +153,12 @@ footer
 		transition: .2s
 		&:hover
 			color: #0076be
+	@media (max-width: 576px)
+		font-size: 14px
 .footerMap
 	width: 100%
+	@media (max-width: 576px)
+		margin-bottom: 30px
 .footer-links
 	margin-top: 20px
 	a
@@ -156,3 +181,64 @@ footer
 	background-position: -5px -58px
 	&:hover
 		background-position: -58px -58px
+.footer-links
+	margin-bottom: 0
+.slider
+	margin-top: 90px
+	text-align: center
+.slick-prev
+	left: 0
+	top: calc(50% - 23px)
+	z-index: 10
+	@media (max-width: 576px)
+		display: none!important
+	&:before
+		content: ''
+		background: url(../img/slider-control-left.png)
+		position: absolute
+		width: 23px
+		height: 47px
+.slick-next
+	right: 0
+	top: calc(50% - 23px)
+	z-index: 10
+	@media (max-width: 576px)
+		display: none!important
+	&:before
+		content: ''
+		background: url(../img/slider-control-right.png)
+		width: 23px
+		height: 47px
+		position: absolute
+.slick-item
+	img
+		width: 100%
+		max-width: 700px
+		margin: 0 auto
+.slider-text
+	padding-top: 80px
+	font-size: 28px
+	color: #808080
+	span
+		font-size: 21px
+		display: block
+	@media (max-width: 576px)
+		font-size: 24px
+		span
+			font-size: 18px
+.slick-dots
+	bottom: 100px
+	li
+		background: red
+		border-radius: 50%
+		width: 10px
+		height: 10px
+		border: 1px solid transparent
+		transition: .2s
+		&.slick-active
+			width: 10px
+			height: 10px
+			background: #fff
+			border: 1px solid red
+		button:before
+			font-size: 0
